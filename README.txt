@@ -1,12 +1,10 @@
-================================================================================ Image Converter - Client-Side Image Converter
+Image Converter - Client-Side Image Converter
 
 Version: 1.0.0
 Author: Amekr
 Contact: info@amekr.com
 
-Thank you for purchasing the Image Converter Tool! We're excited to have you on
-board. This documentation will guide you through the setup and customization of
-the tool.
+We're excited to have you on board. This documentation will guide you through the setup and customization of the tool.
 
 TABLE OF CONTENTS
 
@@ -21,7 +19,7 @@ TABLE OF CONTENTS
 
 **OVERVIEW**
 
-Image Flipper is a modern, secure, and high-performance image conversion tool
+Image Converter is a modern, secure, and high-performance image conversion tool
 that runs entirely in the user's browser. It allows users to convert images
 between JPEG, PNG, and WebP formats with ease.
 
