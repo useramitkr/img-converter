@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A fast, free, and private image converter. Flip images between JPG, PNG, and WebP formats right in your browser. No uploads, 100% client-side.">
+    <meta name="keywords"
+        content="image converter, png to jpg, jpg to webp, webp converter, image flipper, client-side image processing, private image converter, free image tool">
+    <meta name="author" content="Amekr">
+    <meta name="theme-color" content="#111015">
+    <title>◆ Image Converter ◆</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+
+<body>
+    <div class="background-effects"></div>
+    <header class="main-header">
+        <a href="/">
+            <div class="logo">◆ Img-Converter ◆</div>
+        </a>
+        <div class="header-buttons">
+            <a href="./howitworks.html">How it Works</a>
+            <a href="./faq.html">FAQ</a>
+            <a href="#">GitHub</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="header">
+                <h1>Image Format Converter</h1>
+                <p>Your image, reimagined. Convert on the fly, right in your browser.</p>
+            </div>
+
+            <div id="uploadArea" class="upload-area">
+                <input type="file" id="fileInput" accept="image/jpeg, image/png, image/webp" multiple>
+                <div class="upload-area-content">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    <span id="uploadText">Drop files here or click to select</span>
+                </div>
+            </div>
+
+            <div id="conversionOptions" class="conversion-options">
+                <div class="conversion-option" data-format="webp">to WebP</div>
+                <div class="conversion-option" data-format="png">to PNG</div>
+                <div class="conversion-option" data-format="jpeg">to JPG</div>
+            </div>
+
+            <div id="qualityControl" class="quality-control">
+                <label id="qualityLabel" for="qualitySlider">Quality: 90%</label>
+                <input type="range" id="qualitySlider" min="1" max="100" value="90">
+            </div>
+
+            <div id="message" class="message"></div>
+
+            <div id="resultsContainer"></div>
+
+            <button id="downloadAllBtn" class="download-btn">Download All (.zip)</button>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        100% Client-Side. No data ever leaves your browser.
+    </footer>
+
+    <script src="./assets/js/app.js"></script>
+
+</body>
+
+</html>

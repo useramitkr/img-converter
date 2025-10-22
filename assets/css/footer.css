@@ -1,0 +1,10 @@
+/* Footer-specific styles */
+.main-footer {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    color:
+        var(--text-secondary);
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}

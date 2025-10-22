@@ -1,0 +1,6 @@
+# Disable directory listing/browsing
+Options -Indexes
+
+# Custom Error Pages
+ErrorDocument 404 /error/404.html
+ErrorDocument 403 /error/403.html
